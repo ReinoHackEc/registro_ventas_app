@@ -14,10 +14,10 @@ export default function Login() {
   return (
     <form onSubmit={handleLogin}>
       <h2>Iniciar Sesión</h2>
-      <input placeholder="Correo" value={email} onChange={e => setEmail(e.target.value)} />
-      <input placeholder="Contraseña" type="password" value={password} onChange={e => setPassword(e.target.value)} />
+      <input placeholder="Correo" value={email} onChange={e => setEmail(e.target.value)} required />
+      <input placeholder="Contraseña" type="password" value={password} onChange={e => setPassword(e.target.value)} required />
       <button type="submit">Entrar</button>
-      {error && <p>{error}</p>}
+      {error && <p style={{color: 'red'}}>{error}</p>}
     </form>
   );
 }
