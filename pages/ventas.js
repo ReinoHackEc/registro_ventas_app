@@ -1,1 +1,0 @@
-// Flujo del vendedor con escaneo de códigos
